@@ -1,6 +1,7 @@
 /**
  *
  */
+
 var items = [
 	{name: 'りんご',price: 100, count: 3},
 	{name: 'ぶどう',price: 200, count: 1},
@@ -14,10 +15,11 @@ higherPrice(250);
 function higherPrice (targetPrice) {
 
 	for(var i=0; i<5; i++){
-		if(itemsi[i].price * items[i].count > targetPrice){
-			console.log(items[i].name);
+		if(items[i].price * items[i].count < targetPrice){
+						continue;
 		}else{
-			continue;
+						console.log(items[i].name);
+
 		}
 
 	}

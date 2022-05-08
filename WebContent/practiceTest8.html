@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>入力フォーム</title>
+<link href="css/practiceTest8.css" rel="stylesheet">
 </head>
 <body>
-<form action="practiceTest8.1.html">名前:<input type="text" id="name" name="name" ></form>
-<form action="practiceTest8.1.html"><br>メールアドレス:<input type="text" id="e-mail" name="e-mail" ></form>
-<form>
-<br>誕生日:
+<form action="practiceTest8.1.html" method="get">
+<br><p>名前:</p>
+<input type="text" id="name" name="name" >
+<br><p>メールアドレス:</p>
+<input type="text" id="e-mail" name="e-mail" >
+
+<br><p>誕生日:</p>
 <select name="month">
 <option value="">-</option>
 <option value="1">1</option>
@@ -59,19 +63,20 @@
 <option value="30">30</option>
 <option value="31">31</option>
 </select>
-</form>
-<br>性別:
+
+<br><p>性別:</p>
 <input type ="radio" name = "gender" value = "male">男
 <input type ="radio" name = "gender" value = "female">女
-<br>OS:
+<br><p>OS:</p>
 <input type ="checkbox" name = "OS" value = "windows7">windows7
 <input type ="checkbox" name = "OS" value = "windows8">windows8
 <input type ="checkbox" name = "OS" value = "windows10">windows10
 <input type ="checkbox" name = "OS" value = "mac">mac
 
-<form action="practiceTest8.1.html"><br>ひとこと:<input type="text" id="message" name="message" ></form>
+<br><p>ひとこと:</p>
+<input type="text" id="message" name="message" >
 <br><button onclick="location.href='practiceTest8.1.html'">登録</button>
 
-
+</form>
 </body>
 </html>
